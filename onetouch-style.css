@@ -13,22 +13,22 @@
         }
 
         :root {
-            --deep-space: #1E1E24;
-            --surface-1: #26262D;
-            --surface-2: #2E2E36;
-            --surface-3: #36363F;
-            --accent: #FF7A5C;
-            --accent-light: #fd9c87;
-            --accent-glow: rgba(255, 107, 107, 0.35);
-            --accent-soft: rgba(255, 107, 107, 0.08);
-            --accent-border: rgba(255, 107, 107, 0.25);
-            --text-primary: #EEEEF0;
-            --text-secondary: #8A8B9E;
-            --text-muted: #55566A;
-            --border-subtle: rgba(255, 255, 255, 0.06);
-            --green: #22C55E;
-            --amber: #F59E0B;
-            --rose: #F43F5E;
+            --deep-space: #0F2A44;
+            --surface-1: #123552;
+            --surface-2: #16405F;
+            --surface-3: #1A4A6B;
+            --accent: #1ABC9C;
+            --accent-light: #34D6B5;
+            --accent-glow: rgba(26,188,156,0.35);
+            --accent-soft: rgba(26,188,156,0.08);
+            --accent-border: rgba(26,188,156,0.25);
+            --text-primary: #FFFFFF;
+            --text-secondary: rgba(255,255,255,0.75);
+            --text-muted: #7e7e7e;
+            --border-subtle: rgba(255,255,255,0.08);
+            --green: #1ABC9C;
+            --amber: #d4a017;
+            --rose: #D1FAF5;
             --radius: 16px;
             --radius-sm: 10px;
             --radius-xs: 6px;
@@ -81,7 +81,7 @@
         }
 
         .navbar.scrolled {
-            background: rgba(30, 30, 36, 0.8);
+            background-color: var(--deep-space);
             backdrop-filter: blur(24px);
             -webkit-backdrop-filter: blur(24px);
             padding: 14px 0;
@@ -166,7 +166,7 @@
         }
 
         .btn-primary:hover {
-            background: #FF7A5C;
+            background: #1ABC9C;
             box-shadow: 0 0 36px var(--accent-glow),
                         0 1px 0 rgba(255,255,255,0.15) inset;
             transform: translateY(-1px);
@@ -228,8 +228,8 @@
             width: 1000px;
             height: 700px;
             background: radial-gradient(circle at center,
-                rgba(255, 107, 107, 0.12) 0%,
-                rgba(255, 107, 107, 0.04) 35%,
+                rgba(26,188,156,0.12) 0%,
+                rgba(26,188,156,0.04) 35%,
                 transparent 55%);
             pointer-events: none;
         }
@@ -297,7 +297,7 @@
         }
 
         .gradient-text {
-            background: linear-gradient(135deg, #FFD4D4 0%, var(--accent) 60%, #fb9e89 100%);
+            background: linear-gradient(135deg, #D1FAF5 0%, var(--accent) 60%, #2EE6C2 100%);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -587,7 +587,7 @@
             width: 48px;
             height: 48px;
             background: var(--accent-soft);
-            border: 1px solid rgba(255, 107, 107, 0.10);
+            border: 1px solid rgba(26,188,156,0.10);
             border-radius: 12px;
             display: grid;
             place-items: center;
@@ -1077,7 +1077,7 @@
         .pricing-section {
             background: linear-gradient(180deg,
                 var(--deep-space) 0%,
-                rgba(255, 107, 107, 0.02) 50%,
+                rgba(26,188,156,0.02) 50%,
                 var(--deep-space) 100%);
         }
 
@@ -1156,7 +1156,7 @@
             transform: scale(1.05);
             border-color: var(--accent-border);
             z-index: 2;
-            box-shadow: 0 0 80px rgba(255, 107, 107, 0.06),
+            box-shadow: 0 0 80px rgba(26,188,156,0.06),
                         0 24px 48px rgba(0,0,0,0.4);
         }
 
@@ -1278,7 +1278,7 @@
             width: 600px;
             height: 400px;
             background: radial-gradient(ellipse at center,
-                rgba(255, 107, 107, 0.06) 0%, transparent 60%);
+                rgba(26,188,156,0.06) 0%, transparent 60%);
             pointer-events: none;
         }
 
@@ -1644,8 +1644,8 @@
             width: 800px;
             height: 500px;
             background: radial-gradient(circle at center,
-                rgba(255, 107, 107, 0.10) 0%,
-                rgba(255, 107, 107, 0.03) 35%,
+                rgba(26,188,156,0.10) 0%,
+                rgba(26,188,156,0.03) 35%,
                 transparent 55%);
             pointer-events: none;
         }
