@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneTouch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="onetouch-style.css">
+<!--
+
+-->
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="nav-brand">
+                <span class="brand-icon">O</span>
+                OneTouch
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about_us">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact_us">Contact Us</a></li>
+                <li class="nav-mobile-actions">
+                    <a href="#" class="btn btn-ghost" onclick="return false;">Log in</a>
+                    <a href="#" class="btn btn-primary" onclick="return false;">Start Free Trial</a>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <a href="https://wa.me/919207049363?text=Dear%20Onetoucht%20Support%20Connect,%20I%20Would%20like%20to%20get%20support%20ont%20" class="btn btn-ghost">Support</a>
+                <a href="https://wa.me/919207049363?text=Hi%20Onetouch%20Connect,%20I%20Would%20like%20to%20request%20a%20" class="btn btn-primary">Request Service</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-inner container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Total Technical Solutions
+                </div>
+                <h1>All under<br><span class="gradient-text">one platform</span></h1>
+                <p class="hero-desc">Integrated technical service platform providing end-to-end solutions for homes, corporates, NBFCs, and banking sectors</p>
+                <div class="hero-cta">
+                    <a href="tel:+919207049363" class="btn btn-primary btn-lg">Contact Now 
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6.6 10.8c1.5 3 4 5.5 7 7l2.3-2.3c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.9.6.6 0 1 .4 1 1V21c0 .6-.4 1-1 1C10.3 22 2 13.7 2 3c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.4.2 2.7.6 3.9.1.4 0 .8-.3 1.1L6.6 10.8z"/>
+                        </svg>
+                    <a href="https://wa.me/919207049363?text=Hi%20Onetouch%20Connect,%20I%20have%20an%20enquiry." class="btn btn-secondary btn-lg">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        </svg>
+                        Message
+                    </a>
+                </div>
+                <div class="trusted-row">
+                    <!-- <p class="trusted-label">Get expert support in minutes.</p> -->
+                    <!-- <div class="trusted-logos">
+                        <span class="trusted-logo"><span class="t-icon"></span> Vercel</span>
+                        <span class="trusted-logo"><span class="t-icon"></span> Linear</span>
+                        <span class="trusted-logo"><span class="t-icon"></span> Raycast</span>
+                        <span class="trusted-logo"><span class="t-icon"></span> Resend</span>
+                        <span class="trusted-logo"><span class="t-icon"></span> Supabase</span>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="hero-mockup">
+                <div class="mockup-window">
+                    <img class="mockup-image" src="images/home-main-image.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section class="section features-section" id="about_us">
+        <div class="container">
+            <div class="section-header fade-up">
+                <p class="section-label">About Us</p>
+                <h2 class="section-title">All under one platform, <br>one contact, one responsibility</h2>
+                <p class="section-desc">We are an integrated technical service platform providing end-to-end solutions for homes, corporates, NBFCs, and the banking sector.</p>
+            </div>
+
+            <div class="feature-tabs fade-up" role="tablist">
+                <button class="feature-tab active" data-tab="who-we-are" role="tab">Who We Are</button>
+                <button class="feature-tab" data-tab="what-we-do" role="tab">What We Do</button>
+                <button class="feature-tab" data-tab="why-choose-us" role="tab">Why Choose Us</button>
+                <button class="feature-tab" data-tab="mission-vision" role="tab">Mission & Vision</button>
+                <button class="feature-tab" data-tab="our-founders" role="tab">Our Founders</button>
+            </div>
+
+            <div class="feature-panels">
+                <!-- Panel 1: Who We Are -->
+                <div class="feature-panel active" data-panel="who-we-are">
+                    <div class="feature-text">
+                        <h3>Integrated Technical Service Partner</h3>
+                        <p>One Touch Solutions is an integrated technical service platform delivering reliable, end-to-end solutions across residential and enterprise needs.</p>
+                        <ul class="feature-bullets">
+                            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Single-point partner across sectors</li>
+                            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> End-to-end service, supply & projects</li>
+                            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Focused on quality & accountability</li>
+                            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> One platform. One contact. One responsibility</li>
+                        </ul>
+                    </div>
+                    <div class="feature-visual">
+                        <img class="feature-image" src="images/who-we-are.png" alt="">
+                    </div>
+                </div>
+
+                <!-- Panel 2: what we do -->
+                <div class="feature-panel" data-panel="what-we-do">
+                    <div class="feature-text">
+                        <h3>End-to-End Services <br>Under One Platform</h3>
+                        <p>We deliver a complete range of technical and facility services.</p>
+                        <ul class="feature-bullets">
+                            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Home services: electrical, plumbing, AC repair & installation, cleaning</li>
+                            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Corporate services: facility management, AMC, multi-location support</li>
+                            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Projects: bank branch setup, office interiors, cabling, CCTV systems</li>
+                            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Product supply: AC units, furniture, electrical materials, security systems</li>
+                        </ul>
+                    </div>
+                    <div class="feature-visual">
+                        <img class="feature-image" src="images/what-we-do.png" alt="">
+                    </div>
+                </div>
+
+                <!-- Panel 3: Why choose us -->
+                <div class="feature-panel" data-panel="why-choose-us">
+                    <div class="feature-text">
+                        <h3>One Platform <br>Total Responsibility</h3>
+                        <ul class="feature-bullets">
+                            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Single platform for all service needs</li>
+                            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> End-to-end ownership from supply to execution</li>
+                            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Experience across residential and enterprise sectors</li>
+                            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Scalable solutions for both small and large requirements</li>
+                            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Reliable execution with consistent quality</li>
+                        </ul>
+                    </div>
+                    <div class="feature-visual">
+                        <img class="feature-image" src="images/why-choose-us.png" alt="">
+                    </div>
+                </div>
+
+                <!-- Panel 4: Mission & Vision -->
+                <div class="feature-panel mission-vision" data-panel="mission-vision">
+                    <div class="feature-text mission-vision">
+                        <h3>Our Mission</h3>
+                        <h4>Simplifying Technical Services</h4>
+                        <p>To deliver integrated, reliable, and high-quality technical services through a unified platform.</p>
+                    </div>
+                    <div class="feature-text mission-vision">
+                        <h3>Our Vision</h3>
+                        <h4>Building a Scalable Service Ecosystem</h4>
+                        <p>To become a trusted service partner across India for both residential and enterprise clients.</p>
+                    </div>
+                </div>
+
+                <!-- Panel 5: Our Founders -->
+                <div class="founders-panel" data-panel="our-founders">
+                    <div class="templates-grid">
+
+                        <!-- Founder 1 -->
+                        <div class="template-card fade-up">
+                            <div class="template-thumb">
+                                <img src="images/founder-1.png" alt="Co-Founder" loading="lazy">
+                                <div class="template-thumb-overlay">
+                                    <a href="#" class="btn btn-primary" target="_blank" rel="noopener">Open In Linkedin</a>
+                                </div>
+                            </div>
+                            <div class="template-info">
+                                <div class="template-number">Co-Founder</div>
+                                <h3 class="template-name">Founder Name</h3>
+                                <div class="template-tags">
+                                    <span class="template-tag">Title - 1</span>
+                                    <span class="template-tag">Title - 2</span>
+                                    <span class="template-tag">Title - 3</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Founder 2 -->
+                        <div class="template-card fade-up">
+                            <div class="template-thumb">
+                                <img src="images/founder-2.png" alt="Co-Founder" loading="lazy">
+                                <div class="template-thumb-overlay">
+                                    <a href="#" class="btn btn-primary" target="_blank" rel="noopener">Open In Linkedin</a>
+                                </div>
+                            </div>
+                            <div class="template-info">
+                                <div class="template-number">Co-Founder</div>
+                                <h3 class="template-name">Founder Name</h3>
+                                <div class="template-tags">
+                                    <span class="template-tag">Title - 1</span>
+                                    <span class="template-tag">Title - 2</span>
+                                    <span class="template-tag">Title - 3</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Founder 3 -->
+                        <div class="template-card fade-up">
+                            <div class="template-thumb">
+                                <img src="images/founder-3.png" alt="Co-Founder" loading="lazy">
+                                <div class="template-thumb-overlay">
+                                    <a href="#" class="btn btn-primary" target="_blank" rel="noopener">Open In Linkedin</a>
+                                </div>
+                            </div>
+                            <div class="template-info">
+                                <div class="template-number">Co-Founder</div>
+                                <h3 class="template-name">Founder Name</h3>
+                                <div class="template-tags">
+                                    <span class="template-tag">Title - 1</span>
+                                    <span class="template-tag">Title - 2</span>
+                                    <span class="template-tag">Title - 3</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Founder 4 -->
+                        <div class="template-card fade-up">
+                            <div class="template-thumb">
+                                <img src="images/founder-4.png" alt="Co-Founder" loading="lazy">
+                                <div class="template-thumb-overlay">
+                                    <a href="#" class="btn btn-primary" target="_blank" rel="noopener">Open In Linkedin</a>
+                                </div>
+                            </div>
+                            <div class="template-info">
+                                <div class="template-number">Co-Founder</div>
+                                <h3 class="template-name">Founder Name</h3>
+                                <div class="template-tags">
+                                    <span class="template-tag">Title - 1</span>
+                                    <span class="template-tag">Title - 2</span>
+                                    <span class="template-tag">Title - 3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-strip">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item fade-up">
+                    <div class="stat-number" data-target="0" data-suffix="+">0</div>
+                    <div class="stat-label">Projects Executed</div>
+                </div>
+                <div class="stat-item fade-up">
+                    <div class="stat-number" data-target="0" data-suffix="+">0</div>
+                    <div class="stat-label">Enterprise Clients</div>
+                </div>
+                <div class="stat-item fade-up">
+                    <div class="stat-number" data-target="0" data-suffix="+">0</div>
+                    <div class="stat-label">Cities Served</div>
+                </div>
+                <div class="stat-item fade-up">
+                    <div class="stat-number" data-target="99" data-suffix="%">0</div>
+                    <div class="stat-label">Customer Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section pricing-section" id="services">
+        <div class="container">
+            <div class="section-header fade-up">
+                <p class="section-label">Services</p>
+                <h2 class="section-title">All services. One platform.</h2>
+                <p class="section-desc">From home maintenance to enterprise solutions—delivered with complete responsibility and seamless execution.</p>
+            </div>
+
+            <div class="pricing-grid">
+
+                <div class="pricing-card featured fade-up">
+                    <div class="pricing-plan-name">On-demand support</div>
+                    <div class="pricing-amount">
+                        <span class="pricing-value free-label" data-monthly="FREE" data-annual="FREE">Home Services</span>
+                    </div>
+                    <div class="pricing-period"></div>
+                    <a href="#" class="btn btn-secondary" onclick="return false;">Book Service</a>
+                    <div class="pricing-divider"></div>
+                    <ul class="pricing-features">
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Electrical works</li>
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Plumbing services</li>
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> AC repair & installation</li>
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Cleaning services</li>
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Quick response support</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card featured fade-up">
+                    <div class="pricing-plan-name">Managed solutions</div>
+                    <div class="pricing-amount">
+                        <span class="pricing-value free-label" data-monthly="FREE" data-annual="FREE">Corporate Services</span>
+                    </div>
+                    <div class="pricing-period"></div>
+                    <a href="#" class="btn btn-secondary" onclick="return false;">Get Started</a>
+                    <div class="pricing-divider"></div>
+                    <ul class="pricing-features">
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Facility management</li>
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Annual Maintenance Contracts (AMC)</li>
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Multi-location service support</li>
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Dedicated service handling</li>
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Priority response</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card featured fade-up">
+                    <div class="pricing-plan-name">End-to-end execution</div>
+                    <div class="pricing-amount">
+                        <span class="pricing-value free-label" data-monthly="FREE" data-annual="FREE">Projects & Supply</span>
+                    </div>
+                    <div class="pricing-period"></div>
+                    <a href="#" class="btn btn-secondary" onclick="return false;">Contact Us</a>
+                    <div class="pricing-divider"></div>
+                    <ul class="pricing-features">
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Bank branch setup</li>
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Office interiors</li>
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Data cabling & networking</li>
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> CCTV & security systems</li>
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Product supply (AC, furniture, electricals)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section class="section section-products" id="products">
+        <div class="container">
+            <div class="section-header fade-up">
+                <p class="section-label">Products</p>
+                <h2 class="section-title">All services. One platform.</h2>
+                <p class="section-desc">From home maintenance to enterprise solutions—delivered with complete responsibility and seamless execution.</p>
+            </div>
+
+            <div class="products-panel"></div>
+                <div class="products-grid">
+
+                    <!-- Product 1 -->
+                    <div class="template-card fade-up">
+                        <div class="template-thumb">
+                            <img src="images/product-1.png" alt="Climate Control" loading="lazy">
+                            <div class="template-thumb-overlay">
+                                <a href="#" class="btn btn-primary" target="_blank" rel="noopener">Explore Now</a>
+                            </div>
+                        </div>
+                        <div class="template-info">
+                            <div class="template-number">AC units</div>
+                            <h3 class="template-name">Climate Control</h3>
+                            <p class="template-desc">Efficient cooling solutions with reliable AC units for homes and commercial spaces.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="template-card fade-up">
+                        <div class="template-thumb">
+                            <img src="images/product-2.png" alt="Office furniture & chairs" loading="lazy">
+                            <div class="template-thumb-overlay">
+                                <a href="#" class="btn btn-primary" target="_blank" rel="noopener">Explore Now</a>
+                            </div>
+                        </div>
+                        <div class="template-info">
+                            <div class="template-number">Office furniture & chairs</div>
+                            <h3 class="template-name">Workspace Solutions</h3>
+                            <p class="template-desc">Ergonomic office furniture and seating designed for comfort, productivity, and modern workspaces.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="template-card fade-up">
+                        <div class="template-thumb">
+                            <img src="images/product-3.png" alt="Office furniture & chairs" loading="lazy">
+                            <div class="template-thumb-overlay">
+                                <a href="#" class="btn btn-primary" target="_blank" rel="noopener">Explore Now</a>
+                            </div>
+                        </div>
+                        <div class="template-info">
+                            <div class="template-number">Electronics</div>
+                            <h3 class="template-name">Electrical Supplies</h3>
+                            <p class="template-desc">High-quality electrical materials and components for safe and efficient installations.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="template-card fade-up">
+                        <div class="template-thumb">
+                            <img src="images/product-4.png" alt="Office furniture & chairs" loading="lazy">
+                            <div class="template-thumb-overlay">
+                                <a href="#" class="btn btn-primary" target="_blank" rel="noopener">Explore Now</a>
+                            </div>
+                        </div>
+                        <div class="template-info">
+                            <div class="template-number">CCTV & security systems</div>
+                            <h3 class="template-name">Security Systems</h3>
+                            <p class="template-desc">Advanced CCTV and surveillance solutions to ensure safety and complete monitoring.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT US -->
+    <section class="subscribe-section" id="contact_us">
+        <div class="container">
+            <div class="subscribe-inner fade-up">
+                <p class="section-label">Contact Us</p>
+                <h2 class="section-title">Get in touch with us</h2>
+                <p class="section-desc">For service requests, project inquiries, or corporate support—our team is ready to assist you.</p>
+                <div class="subscribe-input-group">
+                    <input type="text" placeholder="Name" autocomplete="name">
+                </div>
+                <br>
+                <div class="subscribe-input-group">
+                    <input type="email" placeholder="Email Address" autocomplete="email">
+                </div>
+                <br>
+                <div class="subscribe-input-group">
+                    <input type="text" placeholder="Phone Number" autocomplete="mobile">
+                </div>
+                <br>
+                <div class="subscribe-input-group">
+                    <input type="textarea" placeholder="Describe your requirement" autocomplete="none">
+                </div>
+                <br>
+                <div class="subscribe-input-group">
+                    <button class="btn btn-primary submit-contact-form">Submit</button>
+                </div>
+                <div class="subscribe-meta">
+                    <span>
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        Quick response support
+                    </span>
+                    <span>
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        End-to-end service handling
+                    </span>
+                    <span>
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        Trusted across multiple sectors
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row-links">
+                <a href="#about_us">About Us</a>
+                <span class="footer-link-dot"></span>
+                <a href="#pricing">Services</a>
+                <span class="footer-link-dot"></span>
+                <a href="#products">Products</a>
+            </div>
+            <div class="footer-row-bottom">
+                <p class="footer-copy">Copyright &copy; 2026 OneTouch. Design: <a href="#" onclick="return false;">OneTouch</a></p>
+                <div class="footer-right">
+                    <div class="footer-socials">
+                        <a href="#" aria-label="X" onclick="return false;">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" onclick="return false;">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M7 2C4.239 2 2 4.239 2 7v10c0 2.761 2.239 5 5 5h10c2.761 0 5-2.239 5-5V7c0-2.761-2.239-5-5-5H7zm10 2a3 3 0 013 3v10a3 3 0 01-3 3H7a3 3 0 01-3-3V7a3 3 0 013-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.75a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" onclick="return false;">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                    <span class="separator"></span>
+                    <div class="footer-legal">
+                        <a href="#" onclick="return false;">Privacy</a>
+                        <a href="#" onclick="return false;">Terms</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="onetouch-script.js"></script>
+
+</body>
+</html>
