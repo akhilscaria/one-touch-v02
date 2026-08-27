@@ -102,10 +102,15 @@ if (!prefersReducedMotion) {
     });
 }
 
+// Development
+// const API_URL = "https://gbb4e16f60f7d6b-atpots01.adb.ap-hyderabad-1.oraclecloudapps.com/ords/maze/public/enquiry";
+// const BRANCH_CODE = "M-IND";
+// const BUSINESS_UNIT_CODE = "MIND-HO";
 
-const API_URL = "https://gbb4e16f60f7d6b-atpots01.adb.ap-hyderabad-1.oraclecloudapps.com/ords/maze/public/enquiry";
-const BRANCH_CODE = "M-IND";
-const BUSINESS_UNIT_CODE = "MIND-HO";
+// Production
+const API_URL = "https://gbb4e16f60f7d6b-otsprod.adb.ap-hyderabad-1.oraclecloudapps.com/ords/onetouch/crm/enquiry";
+const BRANCH_CODE = "OTS";
+const BUSINESS_UNIT_CODE = "OTS-EKM";
 
 async function submitEnquiry(
     apiUrl,
