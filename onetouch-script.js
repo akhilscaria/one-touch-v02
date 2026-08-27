@@ -154,64 +154,136 @@ async function handleContactFormSubmit() {
     const status = document.getElementById("contact_status");
     const button = document.querySelector(".submit-contact-form");
 
-
-    // Get form values
     const name = document.getElementById("contact_name").value.trim();
     const email = document.getElementById("contact_email").value.trim();
     const phone = document.getElementById("contact_phone").value.trim();
     const message = document.getElementById("contact_message").value.trim();
 
 
-    // Basic validation
+    // -----------------------------
+    // Required field validation
+    // -----------------------------
     if (!name || !email || !phone || !message) {
 
         status.textContent = "Please fill in all fields.";
+        status.className = "contact-status show warning";
 
         return;
     }
 
 
-    status.textContent = "Submitting enquiry...";
+    // -----------------------------
+    // Email validation
+    // -----------------------------
+    const emailPattern =
+        /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (!emailPattern.test(email)) {
+
+        status.textContent =
+            "Please enter a valid email address.";
+
+        status.className = "contact-status show warning";
+
+        document.getElementById("contact_email").focus();
+
+        return;
+    }
+
+
+    // -----------------------------
+    // Mobile number validation
+    // -----------------------------
+    // Allows:
+    // 9876543210
+    // +919876543210
+    // 919876543210
+    const mobilePattern =
+        /^(?:\+91|91)?[6-9]\d{9}$/;
+
+    // Remove spaces and hyphens before validation
+    const cleanPhone = phone.replace(/[\s-]/g, "");
+
+    if (!mobilePattern.test(cleanPhone)) {
+
+        status.textContent =
+            "Please enter a valid 10-digit mobile number.";
+
+        status.className = "contact-status show warning";
+
+        document.getElementById("contact_phone").focus();
+
+        return;
+    }
+
+
+    // -----------------------------
+    // Show processing message
+    // -----------------------------
+    status.textContent = "Submitting your enquiry...";
+    status.className = "contact-status show info";
+
     button.disabled = true;
 
 
+    // -----------------------------
     // Request body
+    // -----------------------------
     const requestBody = {
         name: name,
         email: email,
-        phone: phone,
+        phone: cleanPhone,
         subject: "Website Enquiry",
         message: message
     };
 
 
-    // Call API
-    const result = await submitEnquiry(
-        API_URL,
-        BRANCH_CODE,
-        BUSINESS_UNIT_CODE,
-        requestBody
-    );
+    try {
+
+        const result = await submitEnquiry(
+            API_URL,
+            BRANCH_CODE,
+            BUSINESS_UNIT_CODE,
+            requestBody
+        );
 
 
-    if (result.success) {
+        if (result.success) {
 
-        status.textContent = "Enquiry submitted successfully.";
+            status.textContent =
+                "Thank you! Your enquiry has been submitted successfully.";
 
-        // Clear form
-        document.getElementById("contact_name").value = "";
-        document.getElementById("contact_email").value = "";
-        document.getElementById("contact_phone").value = "";
-        document.getElementById("contact_message").value = "";
+            status.className = "contact-status show success";
 
-    } else {
+
+            // Clear form
+            document.getElementById("contact_name").value = "";
+            document.getElementById("contact_email").value = "";
+            document.getElementById("contact_phone").value = "";
+            document.getElementById("contact_message").value = "";
+
+        } else {
+
+            status.textContent =
+                "We couldn't submit your enquiry. Please try again.";
+
+            status.className = "contact-status show error";
+
+            console.error("API Error:", result.error);
+        }
+
+    } catch (error) {
 
         status.textContent =
-            "Unable to submit enquiry. Please try again.";
+            "Something went wrong. Please try again later.";
 
-        console.error(result.error);
+        status.className = "contact-status show error";
+
+        console.error("Contact form error:", error);
+
+    } finally {
+
+        button.disabled = false;
+
     }
-
-
-    button.disabled = false;
 }
