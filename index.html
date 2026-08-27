@@ -27,8 +27,8 @@
                 <li><a href="#products">Products</a></li>
                 <li><a href="#contact_us">Contact Us</a></li>
                 <li class="nav-mobile-actions">
-                    <a href="#" class="btn btn-ghost" onclick="return false;">Log in</a>
-                    <a href="#" class="btn btn-primary" onclick="return false;">Start Free Trial</a>
+                    <a href="mailto:support@onetouchtotalsolutions.com?subject=Support Request&body=Hello,%20I%20would%20like%20to%20get%20a%20support%20for" class="btn btn-ghost">Support</a>
+                    <a href="mailto:support@onetouchtotalsolutions.com?subject=Service Request&body=Hello,%20I%20would%20like%20to%20get%20service%20on" class="btn btn-primary">Request Service</a>
                 </li>
             </ul>
             <div class="nav-actions">
@@ -425,24 +425,25 @@
                 <h2 class="section-title">Get in touch with us</h2>
                 <p class="section-desc">For service requests, project inquiries, or corporate support—our team is ready to assist you.</p>
                 <div class="subscribe-input-group">
-                    <input type="text" placeholder="Name" autocomplete="name">
+                    <input type="text" id="contact_name" placeholder="Name" autocomplete="name">
                 </div>
                 <br>
                 <div class="subscribe-input-group">
-                    <input type="email" placeholder="Email Address" autocomplete="email">
+                    <input type="email" id="contact_email" placeholder="Email Address" autocomplete="email">
                 </div>
                 <br>
                 <div class="subscribe-input-group">
-                    <input type="text" placeholder="Phone Number" autocomplete="mobile">
+                    <input type="text" id="contact_phone" placeholder="Phone Number" autocomplete="mobile">
                 </div>
                 <br>
                 <div class="subscribe-input-group">
-                    <input type="textarea" placeholder="Describe your requirement" autocomplete="none">
+                    <input type="textarea" id="contact_message" placeholder="Describe your requirement" autocomplete="none">
                 </div>
                 <br>
                 <div class="subscribe-input-group">
-                    <button class="btn btn-primary submit-contact-form">Submit</button>
+                    <button type="button" class="btn btn-primary submit-contact-form" onclick="handleContactFormSubmit()">Submit</button>
                 </div>
+                <div id="contact_status"></div>
                 <div class="subscribe-meta">
                     <span>
                         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
